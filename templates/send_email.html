@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Email</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Send email</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <h1>title</h1>
+        <input type="text" name="title" placeholder="subject of the email">
+        <h1>Address</h1>
+        <input type="email" name="email" placeholder="email address">
+        <h1>Message:</h1>
+        <textarea name="message" placeholder="type message"></textarea>
+        <br>
+        <input type="submit" value="Send">
+        
+        
+    </form>
+</body>
+</html>
